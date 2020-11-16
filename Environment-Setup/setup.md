@@ -18,20 +18,33 @@
 
 1. Download Virtualbox
 2. Download ISOs
-3. Launch Virtualbox and create a VM
-4. We will want to have the following configurations for our VMs:
+3. Launch Virtualbox and create a Host Only Network (File > Host Network Manager and click Create)
+    * Under properties:
+        - We will set the IPv4 address to: 192.168.56.1
+        - Under DHCP Server:
+            - Server address: 192.168.56.100
+            - Server Mask: 255.255.255.0
+            - Lower: 192.168.56.2
+            - Upper: 192.168.56.254
+4. We will want to have the following configurations for our three VMs:
     - 16 GB of storage per VM 
     - 1024 MB of RAM per VM
-    - Network will be set to NAT
+    - Network will be set to Host Only Adapter
 5. We will set up the Ubuntu Server first and then the CentOS Servers
-6. Some notes for the Ubuntu Server:
-    - We will need to check to see if the following packages are installed:
-        - `ssh`
-        - `git`
-        - `ansible`
-        - `net-tools`
-    - We will need to start the SSH service and enable it on startup: `sudo systemctl start ssh; sudo systemctl enable ssh`
-    - We will need to create a non-root user for the VM:
-        - Create user: `sudo useradd [username]` [for this lab we will use `devops` as the non-root user]
-        - Set password for the user: `passwd devops`
-        - Add the user to the `sudo` group: `sudo usermod -aG sudo devops`
+    * We will need to update our repositories and packages that are installed on the system with the following commands:
+        - `sudo apt update`: update the software repositories
+        - `sudo apt full-upgrade`: download and upgrade the software packages
+    * Some notes for the Ubuntu Server:
+        - We will need to check to see if the following packages are installed:
+            - `git`
+            - `ansible`
+            - `net-tools`
+            - `python`
+            - `python3`
+        - We will need to make sure we start the SSH service and enable it on startup: `sudo systemctl start ssh; sudo systemctl enable ssh`
+        - We will need to create a non-root user for the VM:
+            - Create user: `sudo useradd [username]` [for this lab we will use `devops` as the non-root user]
+            - Set password for the user: `passwd devops`
+            - Add the user to the `sudo` group: `sudo usermod -aG sudo devops`
+6. We will now set up the CentOS servers (we can duplicate the setup for both servers)
+    
