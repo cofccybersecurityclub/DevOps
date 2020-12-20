@@ -9,7 +9,7 @@ sudo systemctl start ssh
 sudo systemctl enable ssh
 
 # add devops user as a non-root user
-sudo useradd -m  -s /bin/bash devops
+sudo useradd -m -s /bin/bash devops
 passwd devops
 
 # add devops to the sudo group

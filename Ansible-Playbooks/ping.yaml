@@ -1,0 +1,7 @@
+---
+
+- name: ping
+  hosts: devops
+  tasks: 
+    - name: Test Connection
+      ping:

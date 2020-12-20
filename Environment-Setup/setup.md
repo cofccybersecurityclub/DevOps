@@ -47,4 +47,3 @@
             - Set password for the user: `passwd devops`
             - Add the user to the `sudo` group: `sudo usermod -aG sudo devops`
 6. We will now set up the CentOS servers (we can duplicate the setup for both servers)
-    
