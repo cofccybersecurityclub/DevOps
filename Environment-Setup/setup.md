@@ -12,7 +12,6 @@
 1. [VirtualBox](https://www.virtualbox.org/)
 2. ISOs:
     - [Ubuntu 20.04 Minimal](https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-live-server-amd64.iso?_ga=2.154606776.143673684.1605395134-1815728291.1605395134)
-    - [CentOS 8 Minimal](http://mirror.oss.ou.edu/centos/8.2.2004/isos/x86_64/CentOS-8.2.2004-x86_64-minimal.iso)
 
 ## Configuration Steps:
 
@@ -46,4 +45,3 @@
             - Create user: `sudo useradd [username]` [for this lab we will use `devops` as the non-root user]
             - Set password for the user: `passwd devops`
             - Add the user to the `sudo` group: `sudo usermod -aG sudo devops`
-6. We will now set up the CentOS servers (we can duplicate the setup for both servers)
