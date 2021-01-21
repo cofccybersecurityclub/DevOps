@@ -38,3 +38,7 @@
             - Create user: `sudo useradd [username]` [for this lab we will use `devops` as the non-root user]
             - Set password for the user: `passwd devops`
             - Add the user to the `sudo` group: `sudo usermod -aG sudo devops`
+
+## Book
+
+[Linux Basics for Hackers](https://github.com/pmccabe5/python-tools-sec-guides/raw/master/Books/linuxbasicsforhackers.pdf)
