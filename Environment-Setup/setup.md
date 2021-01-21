@@ -17,19 +17,11 @@
 
 1. Download Virtualbox
 2. Download ISOs
-3. Launch Virtualbox and create a Host Only Network (File > Host Network Manager and click Create)
-    * Under properties:
-        - We will set the IPv4 address to: 192.168.56.1
-        - Under DHCP Server:
-            - Server address: 192.168.56.100
-            - Server Mask: 255.255.255.0
-            - Lower: 192.168.56.2
-            - Upper: 192.168.56.254
-4. We will want to have the following configurations for our three VMs:
+3. We will want to have the following configurations for our three VMs:
     - 16 GB of storage per VM 
     - 1024 MB of RAM per VM
     - Network will be set to Host Only Adapter
-5. We will set up the Ubuntu Server first and then the CentOS Servers
+4. We will set up the Ubuntu Server first and then the CentOS Servers
     * We will need to update our repositories and packages that are installed on the system with the following commands:
         - `sudo apt update`: update the software repositories
         - `sudo apt full-upgrade`: download and upgrade the software packages
