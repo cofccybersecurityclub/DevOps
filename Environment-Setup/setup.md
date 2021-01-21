@@ -12,7 +12,8 @@
 1. [VirtualBox](https://www.virtualbox.org/)
 2. ISOs:
     - [Ubuntu 20.04 Minimal](https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-live-server-amd64.iso?_ga=2.154606776.143673684.1605395134-1815728291.1605395134)
-
+    - [Alternate Download](https://ubuntu.com/download/server)
+    
 ## Configuration Steps:
 
 1. Download Virtualbox
